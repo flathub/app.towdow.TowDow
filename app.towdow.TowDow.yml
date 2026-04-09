@@ -32,7 +32,7 @@ modules:
       - setup-flutter.sh -C .
       - dart run build_runner build --delete-conflicting-outputs
       - flutter gen-l10n
-      - flutter build linux --release --no-pub --build-name=1.4.2
+      - flutter build linux --release --no-pub --build-name=1.4.3
       - install -D $BUNDLE_PATH/towdow_app /app/bin/towdow_app
       - cp -r $BUNDLE_PATH/lib /app/bin/lib
       - cp -r $BUNDLE_PATH/data /app/bin/data
@@ -44,6 +44,6 @@ modules:
       - pubspec-sources.json
       - type: git
         url: https://gitlab.com/towdow/towdow-flutter.git
-        commit: 29afaa0df8b42eccee16852c57d3e3edc33d5836
+        commit: 86105bf0223bd5275d7f33cb86c0a4d44fd1f8d2
     modules:
       - flutter-sdk-3.35.3.json
